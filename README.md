@@ -1,3 +1,1 @@
-# Custom-memory-allocator
-The main purpose of this project was to learn how to use pointers, data structure(Linked List), system calls for memory requesting, and merging. I know it's not the best implamentation, but I learn a lot how malloc, calloc, realloc, free functions works under the hood.
-This discription will be exapanded)
+
