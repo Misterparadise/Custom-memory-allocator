@@ -1,1 +1,11 @@
-The main purpose of this project was to learn how to use pointers, data structure(Linked List), system calls for memory requesting, and merging. I know it's not the best implamentation, but I learn a lot how malloc, calloc, realloc, free functions works under the hood. This discription will be exapanded)
+Custom Heap Memory Allocator 
+
+Implemented a custom heap memory allocator from scratch, replacing malloc / free.
+
+Designed and implemented free-list–based memory management with block metadata headers.
+
+Implemented allocation, deallocation, block splitting, and coalescing to reduce fragmentation.
+
+Used pointer arithmetic and low-level memory manipulation while ensuring alignment and correctness.
+
+Debugged memory corruption issues using assertions and targeted test cases.
