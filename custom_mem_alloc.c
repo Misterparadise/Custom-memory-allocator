@@ -90,7 +90,20 @@ void custom_free(void *ptr) // Marked block as available
 
    block->is_free = true;
 
+   if (block->next && block->next->is_free) {
+        block->size += sizeof(BLOCK) + block->next->size;
+        block->next = block->next->next;
+        if (block->next)
+            block->next->prev = block;
+    }
 
+    
+    if (block->prev && block->prev->is_free) {
+        block->prev->size += sizeof(BLOCK) + block->size;
+        block->prev->next = block->next;
+        if (block->next)
+            block->next->prev = block->prev;
+    }
 }
 
 
